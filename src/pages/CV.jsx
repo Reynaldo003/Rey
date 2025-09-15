@@ -346,7 +346,7 @@ export default function App() {
                 <div className={`${container} grid grid-cols-1 md:grid-cols-4 gap-8`}>
                     <div>
                         <div className="text-black dark:text-white font-semibold">Reynaldo Vallejo</div>
-                        <p className="text-black dark:text-white mt-2 text-sm">Full-Stack | Django/Node | Chatbots y dashboards.</p>
+                        <p className="text-black dark:text-white mt-2 text-sm">Full-Stack | Django/React/Postgres/MySQL | Chatbots y dashboards.</p>
                     </div>
                     <div>
                         <div className="text-black dark:text-white text-sm font-medium mb-2">Enlaces</div>
@@ -361,7 +361,7 @@ export default function App() {
                         <div className="text-black dark:text-white text-sm font-medium mb-2">Contacto</div>
                         <ul className="space-y-1 text-sm">
                             <li>📍 Córdoba, Veracruz</li>
-                            <li><a href="mailto:toby@example.com" className="hover:text-white">rvallejo276@gmail.com</a></li>
+                            <li><a href="mailto:rvallejo276@gmail.com" className="hover:text-white">rvallejo276@gmail.com</a></li>
                             <li><a href="https://github.com/Reynaldo003" target="_blank" className="hover:text-white">GitHub</a></li>
                             <li><a href="https://www.linkedin.com/in/momerdev/" target="_blank" className="hover:text-white">LinkedIn</a></li>
                         </ul>
