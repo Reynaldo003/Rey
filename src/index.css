@@ -145,8 +145,16 @@ html {
 :root{
   /* Indigo 500 por defecto; cámbialo a tu branding */
   --accent: 99 102 241;
+  
+  --cursor-fill: #000;
+  --cursor-stroke: #fff;
 }
 
 ::view-transition-old(root), ::view-transition-new(root) {
     animation: none;
     mix-blend-mode: normal; }
+
+.dark {
+  --cursor-fill: #fff;
+  --cursor-stroke: #000;
+}
