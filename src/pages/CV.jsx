@@ -422,7 +422,7 @@ export default function App() {
                                     <div className="text-sm text-neutral-800 dark:text-white/70">2025 — Workflow App</div>
                                     <div className="flex items-start gap-3">
                                         <BoxReveal>
-                                            <img src="/volkswagen.svg" alt="Proyecto" className="w-10 h-10" />
+                                            <img src="/volkswagen.svg" alt="Proyecto" className="dark:bg-white/80 rounded-full 0 w-10 h-10" />
                                         </BoxReveal>
                                         <div>
                                             <BoxReveal>
@@ -443,7 +443,7 @@ export default function App() {
                                     <div className="text-sm text-neutral-800 dark:text-white/70">2025 — RObots</div>
                                     <div className="flex items-start gap-3">
                                         <BoxReveal>
-                                            <img src="/logo2.png" alt="RObots" className="rounded-full w-10 h-8" />
+                                            <img src="/logo2.png" alt="RObots" className="rounded-full w-10 h-10 overflow-hidden object-contain" />
                                         </BoxReveal>
                                         <div>
                                             <BoxReveal>
