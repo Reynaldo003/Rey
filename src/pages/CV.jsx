@@ -324,7 +324,7 @@ export default function App() {
                     <div className={container}>
                         <h2 className="text-2xl md:text-3xl font-semibold mb-4">Sobre mí</h2>
                         <p className="max-w-3xl text-neutral-800 dark:text-white/70">
-                            Soy desarrollador full‑stack recien egresado enfocado en causar un impacto positivo dentro de un negocio. Me gusta transformar
+                            Desarrollador full‑stack recien egresado enfocado en causar un impacto positivo dentro de un negocio. Me gusta transformar
                             procesos manuales en flujos automatizados y con buen rendimiento. Disfruto diseñar sistemas
                             simples fáciles de mantener. Actualmente construyo chatbots,
                             dashboards y sitios corporativos para pymes en México.
