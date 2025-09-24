@@ -5,12 +5,9 @@ import { Meteors } from "../components/magicui/meteors";
 import { BoxReveal } from "../components/magicui/box-reveal";
 import { SmoothCursor } from "../components/ui/smooth-cursor";
 import { Dock, DockIcon } from "../components/magicui/dock";
-import { Home, Menu } from "lucide-react";
+import { Home, Menu, MapPinned, BadgeCheck, FolderGit2, ShieldCheck, Zap, FileDown } from "lucide-react";
 import { AnimatedThemeToggler } from "../components/magicui/animated-theme-toggler";
 
-/**
- * UTILIDADES
- */
 function useSmoothScroll() {
     useEffect(() => {
         let lenis;
@@ -80,9 +77,6 @@ function useSpotlight() {
     }, []);
 }
 
-/**
- * CONTENIDO
- */
 const nav = [
     { id: "inicio", label: "Inicio" },
     { id: "sobre-mi", label: "Sobre mí" },
@@ -261,15 +255,17 @@ export default function App() {
                                 Dashboards, chatbots y sitios corporativos. Django/Flask, despliegues en tu hosting favorito, enfoque en rendimiento y seguridad.
                             </p>
                             <div data-reveal className="magic-reveal-del-2 mt-6 flex gap-3 flex-wrap">
+
                                 <a
                                     href="/CV_Reynaldo_Vallejo.pdf"
-                                    className="btn-magic rounded-xl h-11 px-5 py-2 bg-black dark:bg-white text-white dark:text-black font-medium"
+                                    className="btn-magic rounded-xl h-11 w-36 flex items-center px-5 py-2 bg-black dark:bg-white text-white dark:text-black font-medium"
                                 >
-                                    Descargar CV
+                                    <FileDown className="w-5 h-5 absolute " />
+                                    <p className="pl-7">Descargar CV</p>
                                 </a>
                                 <a
                                     href="#contacto"
-                                    className="rounded-xl h-11 px-5 py-2 border border-black/15 dark:border-white/15 text-black/90 dark:text-white/90 hover:bg-white/5"
+                                    className="rounded-xl h-11 px-5 py-2 border flex items-center border-black/15 dark:border-white/15 text-black/90 dark:text-white/90 hover:bg-white/5"
                                 >
                                     Contacto
                                 </a>
@@ -315,7 +311,7 @@ export default function App() {
                                     LinkedIn
                                 </a>
                             </div>
-                            <div className="mt-3 text-black/60 dark:text-white/60 text-sm">📍 Córdoba, Veracruz · Híbrido</div>
+                            <div className="mt-3 text-black/60 dark:text-white/60 text-sm"> <MapPinned className="w-5 h-5 text-red-500 absolute" /><p className="pl-7">Córdoba, Veracruz · Híbrido</p> </div>
                         </div>
                     </div>
                 </section>
@@ -330,9 +326,9 @@ export default function App() {
                             dashboards y sitios corporativos para pymes en México.
                         </p>
                         <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 text-sm text-black/80 dark:text-white/70">
-                            <li>✔️ Trabajo en equipo</li>
-                            <li>✔️ Buenas prácticas</li>
-                            <li>✔️ Comunicación clara</li>
+                            <div className="w-fit h-fit"><BadgeCheck className="w-5 h-5 text-green-500 absolute" /><li className="pl-7">Trabajo en equipo</li></div>
+                            <div className="w-fit h-fit"><BadgeCheck className="w-5 h-5 text-green-500 absolute" /><li className="pl-7">  Buenas prácticas</li></div>
+                            <div className="w-fit h-fit"><BadgeCheck className="w-5 h-5 text-green-500 absolute" /><li className="pl-7">Comunicación clara</li></div>
                         </ul>
                     </div>
                 </section>
@@ -393,7 +389,7 @@ export default function App() {
                     <div className={container}>
                         <h2 className="text-2xl md:text-3xl font-semibold mb-8">Experiencia</h2>
                         <ol className="relative pl-6">
-                            <span className="absolute left-0 top-0 bottom-0 w-px bg-white/15" />
+                            <span className="absolute left-0 top-0 bottom-0 w-px bg-black/15 dark:bg-white/15" />
                             <br />
                             <li data-reveal className="pb-8">
                                 <div className="absolute -left-[7px] mt-1 size-3 rounded-full bg-[rgb(var(--accent))]" />
@@ -625,7 +621,7 @@ export default function App() {
                     <div>
                         <div className="text-black dark:text-white text-sm font-medium mb-2">Contacto</div>
                         <ul className="space-y-1 text-sm">
-                            <li>📍 Córdoba, Veracruz</li>
+                            <MapPinned className="w-5 h-5 text-red-500 absolute" /><li className="pl-7"> Córdoba, Veracruz</li>
                             <li>
                                 <a href="mailto:rvallejo276@gmail.com" className="hover:text-white">
                                     rvallejo276@gmail.com
@@ -645,7 +641,7 @@ export default function App() {
                     </div>
                     <div>
                         <div className="text-black dark:text-white text-sm font-medium mb-2">Estado</div>
-                        <p className="text-sm">✅ Abierto a proyectos (remoto / híbrido).</p>
+                        <BadgeCheck className="w-5 h-5 text-green-500 absolute" /> <p className="text-sm pl-7"> Abierto a proyectos (remoto / híbrido).</p>
                         <p className="text-xs mt-2">
                             Última actualización: {new Date().toLocaleDateString("es-MX")}
                         </p>
